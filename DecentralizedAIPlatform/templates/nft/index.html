@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decentralized AI Platform</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Decentralized AI Platform</h1>
+    </header>
+    <main>
+        <section id="nft-list">
+            {% for nft in nfts %}
+            <div class="nft-item">
+                <h2>{{ nft.title }}</h2>
+                <p>{{ nft.description }}</p>
+                <a href="{% url 'nft_detail' nft.id %}">View Details</a>
+            </div>
+            {% endfor %}
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2022 Decentralized AI Platform</p>
+    </footer>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
