@@ -1,7 +1,7 @@
 Django==3.2.7
 pycryptodome==3.10.1
 requests==2.26.0
-Pillow==8.3.1
+Pillow==10.0.1
 web3==5.23.0
 pytest==6.2.5
 pytest-django==4.4.0
